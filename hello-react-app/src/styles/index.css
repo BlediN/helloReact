@@ -1,0 +1,121 @@
+.animated-header {
+  background: linear-gradient(45deg, #6a11cb, #2575fc, #8f5004, #ff2e63, #2d4059);
+  background-size: 300% 300%;
+  animation: gradientAnimation 8s infinite alternate;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #2575fc;
+}
+
+/* Keyframes for smooth transitioning */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Adjust text colors */
+.animated-header h1 {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.animated-header p {
+  color: #e0e0e0;
+  font-size: 18px;
+}
+
+
+/* Soft dark theme */
+body {
+  background-color: #2E2E38; /* Muted dark gray with a hint of navy */
+  color: #EAEAEA; /* Soft off-white */
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Adjust container padding */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive card layout */
+.card-grid {
+  display: flex; /* Change from grid to flex for better centering */
+  flex-wrap: wrap; /* Ensures responsiveness */
+  gap: 20px; /* Maintain spacing */
+  justify-content: center; /* Centers all cards */
+  align-items: center; /* Keeps them aligned */
+}
+
+
+.card {
+  background: linear-gradient(45deg, #d418c5, #212191);
+  background-size: 200% 200%;
+  animation: colorWave 6s infinite alternate;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Smooth background transition animation */
+@keyframes colorWave {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+.card img {
+  width: 100%; /* Makes it responsive */
+  height: 180px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures it crops properly */
+  border-radius: 8px;
+}
+
+
+/* Adjust fonts to prevent layout breaks */
+.card h2 {
+  font-size: 20px; /* Slightly smaller for better spacing */
+}
+
+.card p {
+  font-size: 14px; /* Prevent overflow issues */
+}
+
+/* Styling for category labels */
+.card .category {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Buttons with softer tones */
+.card button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
